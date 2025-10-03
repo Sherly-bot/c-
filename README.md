@@ -7,7 +7,7 @@ int main() {
      cout<<v[i]<<endl;  
    
    }
-   
+
     return 0;
 }
 
