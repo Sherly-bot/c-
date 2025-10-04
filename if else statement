@@ -18,3 +18,35 @@ int main() {
   }
     return 0;
 }
+
+
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int i,n;
+    cin>>n;
+    i=1;
+    while(i<=n){
+        int space = n-i;
+        while(space)      //First iteration (when i = 1):space = 5 - 1 = 4
+                        The inner while (space) loop will run 4 times, printing 4 spaces (" ").
+After each loop, space-- reduces space from 4 to 0, and then the loop exits.
+        {
+        cout<<" ";
+        space--;
+        }
+    int j = 1;
+    while(j<=i)
+    {
+        cout<<"*";
+        j++;
+    }
+     i++;
+        cout<<endl;
+    }
+    
+    return 0;
+}
