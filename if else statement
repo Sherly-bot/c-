@@ -50,3 +50,53 @@ After each loop, space-- reduces space from 4 to 0, and then the loop exits.
     
     return 0;
 }
+
+
+
+
+
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() {
+    int i,n;
+    cin>>n;
+    i=0;
+    int ans =0;
+    while(n)      ///decimal to binary
+    {
+        int bit=n&1;
+        ans=(bit*pow(10,i))+ans;
+        n = n>>1;
+        i++;
+    }
+    cout<<"answer is:"<<ans<<endl;
+
+    return 0;
+}
+
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int i,n;
+    cin>>n;
+    int ans;
+    int digit;
+    ans=0;
+    i=0;
+    while(n)
+    {
+        digit=n%10;   ///esme fir se n=n%10 nhi karenge kyuki abhi esme kiye toh n ka value 1 ya 0ho jayega and neeche we cant do n/10 so
+        if(digit==1)
+        {
+         ans=ans+pow(2,i) ;  
+        }
+        n=n/10;
+        i++;
+    }
+    cout<<ans<<endl;
+}
