@@ -17,3 +17,43 @@ int main() {
     cout << "the smaller value is"<< maximum<<endl;
     return 0;
 }
+
+
+
+
+binary search
+
+#include <iostream>
+using namespace std;
+int isbinary(int array[], int size, int key)
+{
+    int start = 0;
+    int end = size -1;
+    int mid=(start+end)/2;
+    while(start<=end)
+    {
+        if(array[mid]==key)
+        {
+            return mid;
+        }
+        if(key>array[mid])
+        {
+            start = mid+1;
+        }
+        else
+        {
+            end = mid-1;
+        }
+        //start and end update ki toh mid bhi update karna hai
+        mid = (start+end)/2;
+    }
+    return -1;
+}
+
+int main() {
+    int even[] ={2, 4, 6, 8, 10};
+    int size=5;
+   int index = isbinary(even, size, 10);
+    cout<<"index of 10 is"<< index <<endl;
+    
+}
