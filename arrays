@@ -129,3 +129,7 @@ int main()
     cout<< "the first occurenec of the index is at"<<firstocc(even,9,3)<<endl;
       cout<< "the last occurenec of the index is at"<<lastocc(even,9,3)<<endl;
 }
+
+
+
+for total number of occurence = (last occurence - first occurence)+!
