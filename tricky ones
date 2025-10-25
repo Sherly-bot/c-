@@ -1,0 +1,4 @@
+//if 50 nhi hai toh uske peeche vale bhi nhi honge toh start to aake leke aayenge
+//if 75 hai toh uska aake vala toh answer hoga hii hoga toh 
+// if possible answer aaya toh ans store and end ko peeche leke jana hai left mei jana hai kyuki min find karna hai
+if student 1 mei value jyada hua mid se toh studentcount ko inc karenge par we hve to make sure ki voh value jyada nhi hai mid se aur hum esse pagesum mei rakenge toh uskeliye previous one mei nhi rak shakte kyuki voh ist student ka raka hai toh alag se fir se karna padega 
