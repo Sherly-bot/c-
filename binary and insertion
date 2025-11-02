@@ -70,3 +70,63 @@ void bubblesort(int n,int arr[])
     }
     
 }
+
+
+
+char in arrays
+
+
+#include <iostream>
+using namespace std;
+int ispallindrome(char name[],int n)
+{
+    int s=0;
+    int e=n-1;
+    while(s<=e)
+    {
+        if(name[s]==name[e])
+        {
+            return 1;
+        }
+        else
+        {
+            return 0;
+        }
+    }
+}
+void reverse(char name[],int n)
+{
+    int s=0;
+    int e = n-1;
+
+    while(s<e) {
+        swap(name[s], name[e]);
+        s++;
+        e--;
+    }
+    
+}
+int bubblesort(char name[])
+{
+    int i=0;
+    int count=0;
+    for(int i=0;name[i]!='\0';i++)
+    {
+        count++;
+    }
+    return count;
+}
+int main(){
+    char name[20];
+    cout<<"enter you name"<<endl;
+    cin>>name;
+    
+    int len=bubblesort(name);
+    cout<<"length is:"<<len<<endl;
+    
+    reverse(name,len);
+    cout<<"reverse is:"<< name<<endl;
+    
+     cout<<"pallindrome or not is:"<<  ispallindrome(name,len)<<endl;
+    
+}
